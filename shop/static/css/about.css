@@ -1,0 +1,38 @@
+/* Style for the About Us page */
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.about-us-image {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-us-text h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.about-us-text p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}

@@ -1,0 +1,37 @@
+/* Hide checkbox and label */
+.read-more-state {
+    display: none;
+  }
+  
+  /* Style the label as a clickable button */
+  .read-more-trigger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Show/hide description content based on checkbox state */
+  .read-more-state:checked ~ .read-more-wrap {
+    max-height: none;
+    overflow: visible;
+  }
+  
+  /* Hide the label when the description is expanded */
+  .read-more-state:checked ~ .read-more-trigger {
+    display: none;
+  }
+  
+  /* Style the label when it's not hidden */
+  .read-more-state:not(:checked) ~ .read-more-trigger::before {
+    content: 'Read More';
+  }
+  
+  /* Style the label when it's hidden (description expanded) */
+  .read-more-state:checked ~ .read-more-trigger::before {
+    content: 'Read Less';
+  }
+  
